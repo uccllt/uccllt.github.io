@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" type="text/css" href="styles/style.css" />
+<title>The University of California Consortium for Language Learning and Teaching</title>
+<script type="text/javascript" language="javascript" src="scripts/global.js"></script>
+</head>
+
+<div class="container_16">
+	<div class="banner grid_16" style="vertical-align:middle">
+		<a href="index.php">
+			<img alt="" src="images/uccllt_banner.png" />
+		</a>
+		<![if lt IE 7]>
+			<font color="red">PLEASE UPGRADE YOUR BROWSER TO VIEW THIS SITE IN ITS PROPER FORM</font>
+		<![endif]>
+	</div>
+	<div class="clear"></div>
+	<div class="grid_16">
+	<img alt="" src="images/events_banner.png" />
+	</div>
+	<div class="clear"></div>
+	<div class="content grid_16">
+		<div class="grid_1 alpha">&nbsp;</div>
+		<div class="grid_14" style="margin-left:20px; font-size:8px; font-weight:bold; font-family:Futura Bold;">
+			<div style="width:170px; float:left;">
+			<?php	# Connect to database
+				mysql_connect("localhost", "uccllt");
+				mysql_select_db("uccllt");
+			?>
+			
+			<br /><br />
+			<span class="heading">UPCOMING EVENTS</span><br />
+			<?php include('upcoming.php') ?>
+			
+			<span class="heading">PAST EVENTS</span><br />
+			<?php include('past.php') ?>
+			</div>
+		</div>
+		<div class="grid_1 omega">&nbsp;</div>
+	</div>	
+	<div class="clear"></div>
+	<div class="bottombar2 grid_16">
+		<div class="floatleft">
+			<img id="home2" src="images/home2_link.png" alt="" onmouseover="hoverOn('home2')" onmouseout="hoverOut('home2')" onclick="hoverOut('home2'); jSLink('index.php');" />
+		</div>
+		<div class="floatleft">
+			<img id="grants" src="images/grants_link.png" alt="" onmouseover="hoverOn('grants')" onmouseout="hoverOut('grants')" onclick="hoverOut('grants'); jSLink('grants.html');" />
+		</div>
+		<div class="floatleft">
+			<img id="about" src="images/about_link.png" alt="" onmouseover="hoverOn('about')" onmouseout="hoverOut('about')" onclick="hoverOut('about'); jSLink('about/uccllt.html');" />
+		</div>
+		<div class="floatleft">
+			<img id="stats" src="images/stats_link.png" alt="" onmouseover="hoverOn('stats')" onmouseout="hoverOut('stats')" onclick="hoverOut('stats'); jSLink('stats.php');" />
+		</div>
+		<div class="floatleft">
+			<img id="reports" src="images/reports_link.png" alt="" onmouseover="hoverOn('reports')" onmouseout="hoverOut('reports')" onclick="hoverOut('reports'); jSLink('reports.php');" />
+		</div>
+		<div class="floatleft">
+			<img id="distance2" src="images/distance2_link.png" alt="" onmouseover="hoverOn('distance2')" onmouseout="hoverOut('distance2')" onclick="hoverOut('distance2'); jSLink('distance.php');" />
+		</div>
+		<div class="floatleft">
+			<img id="contact" src="images/contact_link.png" alt="" onmouseover="hoverOn('contact')" onmouseout="hoverOut('contact')" onclick="hoverOut('contact'); jSLink('contact.php');" />
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

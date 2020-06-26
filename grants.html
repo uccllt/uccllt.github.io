@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" type="text/css" href="styles/style.css" />
+<title>The University of California Consortium for Language Learning and Teaching</title>
+<script type="text/javascript" language="javascript" src="scripts/global.js"></script>
+</head>
+
+<body>
+<div class="container_16">
+	<div class="banner grid_16" style="vertical-align:middle">
+		<a href="index.php">
+			<img alt="" src="images/uccllt_banner.png" />
+		</a>
+		<!--[if lt IE 7]>
+			<font color="red">PLEASE UPGRADE YOUR BROWSER TO VIEW THIS SITE IN ITS PROPER FORM</font>
+		<![endif]-->
+	</div>
+	<div class="clear"></div>
+	<div class="grid_16">
+		<img alt="" src="images/grants_banner.png" />
+	</div>
+	<div class="clear"></div>
+	<div class="content grid_16" style="height:500px; font-size:12px;">
+		<div class="grid_1 alpha">&nbsp;</div>
+		<div class="grid_14" style="margin-left:20px;">
+			<br />
+			<?php   # Connect to database
+				mysql_connect("localhost", "uccllt");
+				mysql_select_db("uccllt");
+
+				$year = $_GET['year'];
+				if (isset($year)) {
+					echo $year;
+					echo "<table>";
+					echo "<tr><td style=\"width:100px;\">LANGUAGE</td><td style=\"width:500px;\">PROJECT TITLE</td><td style=\"width:100px;\">PI</td><td style=\"width:100px;\">CAMPUS(ES)</td></tr>";
+					$year = mysql_real_escape_string($year);
+					$result = mysql_query("select * from grants where years = '$year'") or die(mysql_error());
+					while ($row = mysql_fetch_array($result)) {
+						$language = $row['language'];
+						$title = $row['title'];
+						$pi_name = $row['pi_name'];
+						$pi_email = $row['pi_email'];
+						$campuses = $row['campuses'];
+						echo "<tr><td>$language</td><td>$title</td><td><a href=\"mailto:$pi_email\">$pi_name</a></td><td>$campuses</td></tr>";
+					}
+					echo "</table><br />";
+					echo "<p style=\"text-align: center\"><a href=\"grants.html\">Back</a></p><br />";
+				}
+				else {
+			?>
+	
+			<?php
+				# Display all available years
+				$result = mysql_query("SELECT DISTINCT years FROM grants ORDER BY years DESC") or die(mysql_error());
+				$row = mysql_fetch_array($result);
+				$year = $row['years'];
+				echo "<a href=\"#\" onclick=\"document.getElementById('year').value = '$year'; document.getElementById('yearform').submit()\">$year</a>";
+				while ($row = mysql_fetch_array($result)) {
+					$year = $row['years'];
+					echo " | <a href=\"#\" onclick=\"document.getElementById('year').value = '$year'; document.getElementById('yearform').submit()\">$year</a>";
+				}
+			?>
+						
+			<form id="yearform" action="grants.html" method="get" style="display: none">
+				<p><input id="year" name="year" type="hidden"/></p>
+			</form>
+			
+			<?php
+				}
+			?>
+		</div>
+		<div class="grid_1 omega">&nbsp;</div>
+	</div>	
+	<div class="clear"></div>
+	<div class="bottombar2 grid_16">
+		<div class="floatleft">
+			<img id="home2" src="images/home2_link.png" alt="" onmouseover="hoverOn('home2')" onmouseout="hoverOut('home2')" onclick="hoverOut('home2'); jSLink('index.php');" />
+		</div>
+		<div class="floatleft">
+			<img id="about" src="images/about_link.png" alt="" onmouseover="hoverOn('about')" onmouseout="hoverOut('about')" onclick="hoverOut('about'); jSLink('about/uccllt.html');" />
+		</div>
+		<div class="floatleft">
+			<img id="stats" src="images/stats_link.png" alt="" onmouseover="hoverOn('stats')" onmouseout="hoverOut('stats')" onclick="hoverOut('stats'); jSLink('stats.php');" />
+		</div>
+		<div class="floatleft">
+			<img id="events" src="images/events_link.png" alt="" onmouseover="hoverOn('events')" onmouseout="hoverOut('events')" onclick="hoverOut('events'); jSLink('events.php');" />
+		</div>
+		<div class="floatleft">
+			<img id="reports" src="images/reports_link.png" alt="" onmouseover="hoverOn('reports')" onmouseout="hoverOut('reports')" onclick="hoverOut('reports'); jSLink('reports.php');" />
+		</div>
+		<div class="floatleft">
+			<img id="distance2" src="images/distance2_link.png" alt="" onmouseover="hoverOn('distance2')" onmouseout="hoverOut('distance2')" onclick="hoverOut('distance2'); jSLink('distance.php');" />
+		</div>
+		<div class="floatleft">
+			<img id="contact" src="images/contact_link.png" alt="" onmouseover="hoverOn('contact')" onmouseout="hoverOut('contact')" onclick="hoverOut('contact'); jSLink('contact.php');" />
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

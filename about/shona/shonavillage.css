@@ -1,0 +1,128 @@
+a {
+	text-decoration: none;
+	color: #FF6633;
+}
+
+h1 {
+	color: #506430;
+	text-decoration: none;
+	text-align: center;
+	}
+	
+body {	
+	background-color: #E3CA99;
+	font-family: Arial, Helvetica, sans-serif;	
+	font-size: 1em;	
+	line-height: 1em;	
+	color: #B19664;
+	margin-top: 0.1em;
+	margin-right: 0.1em;
+	margin-bottom: 0.1em;
+	margin-left: 0.1em
+	}
+h2 {
+	color: #351721;
+	line-height: 1em;
+}
+h3 {	
+	font-family: Arial, Helvetica, sans-serif;	
+	font-size: 1.15em;	
+	background-color: #6C5D46;  	
+	color: #FFFFB2
+	}
+h4 {
+	color: #000000;
+	font-size: xx-small;
+	}
+	
+h5 {
+	color:#ED7A3B;
+	}
+	
+table {
+	text-align: center;
+	vertical-align: top;
+	border: 0;
+	padding: 2;
+	}
+td, th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	line-height: 1em;
+	width: 600;
+}
+textarea {
+	font-family: Arial, Helvetica, sans-serif;	
+	font-size: 1em
+	}
+ul {	
+	font-family: Arial, Helvetica, sans-serif;	
+	font-size: 1em;	
+	list-style-type: square;	
+	list-style-position: outside
+	}
+.BulletBackgroundColor {
+	color: #FFFFFF
+	}
+.DataColor {
+	color: #DEDECA
+	}
+.footer { 
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.167em;
+	font-weight: bold;
+	line-height: 1.83em;
+	color: #333333;
+	background-color: #CCCCCC
+	}
+.FormBackgroundColor {
+	color: #CCCCCC
+	}
+.ImageTitleColor {
+	color: #CCCCCC
+	}
+.LabelColor {
+	color: #CCCCCC
+	}
+.ListColorEven {
+	color: #CCCCCC
+	}
+.ListFooterColor {
+	color: #333333
+	}
+.ListHeaderColor {
+	color: #333333
+	}
+.ListColorOdd {
+	color: #DEDECA
+	}
+.ListTitleColor {
+	color: #CCCCCC
+	}
+.NavigationBackgroundColor {
+	color: #666666
+	}
+.NavigationColor {
+	color: #CCCCCC
+	}
+.NewsDataColor {
+	color: #DEDECA
+	}
+.StoryTitle {
+	color: #000000;
+	font-weight: bold
+	}
+.StoryContentColor {
+	color: #000000
+	}
+.TitleColor {
+	color: #000000
+	}
+a:hover {	
+	text-decoration: underline
+	}
+tr.ListHeaderColor th {
+	text-align: left;
+	}.small {
+	font-size: 85%;
+}

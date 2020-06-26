@@ -1,0 +1,23 @@
+<html>
+<head>
+<script language="javascript">
+oldurl = document.referrer;
+length = oldurl.length;
+num = oldurl.substring(length-6, length-4);
+newurl = oldurl.substring(0, length-6);
+if(num.indexOf("/")!=-1){
+	num = num.substring(1);
+	newurl = oldurl.substring(0, length-5);
+}
+num++;
+newurl += num + ".htm";
+if(num<=34){
+	document.location = newurl;
+}
+else{
+	document.location = oldurl;
+}
+</script>
+</head>
+<body></body>
+</html>

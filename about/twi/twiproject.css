@@ -1,0 +1,361 @@
+/* *** BASIC STRUCTURE STUFF *** */
+html, body
+{
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+body
+{
+	border: 0;
+	text-align: center;
+	background-color: #cc9;
+	color: #222;
+	font: 9pt/17pt Verdana, 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Lucida, Arial, Helvetica, sans-serif;
+}
+
+#wrapper
+{
+	padding: 0;
+	width: 800px;
+	text-align: left;
+	background: #ffffcc;
+	margin: 20px auto 0px;
+}
+
+#headerleft
+{
+	width: 400px;
+	height: 50px;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	background: #99cc99;
+	position: relative;
+	left: 0%;
+	top:  0;
+}
+#headerleft #mainhead
+{
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	font-size: xx-large;
+	font-weight: 500;
+}
+#headerright
+{
+	width: 400px;
+	height: 50px;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	background: #99cc99;
+	position: absolute;
+	left: 50%;
+	vertical-align: bottom;
+	top: 20px;
+}
+#headerright #subhead
+{
+	position: absolute;
+	top: 25px;
+	right: 10px;
+}
+
+#masthead
+{
+	height: 80px;
+	margin: 0;
+	border: 0;
+	background: no-repeat #666633 url(images/twicloth3a.jpg) left;
+	position: relative;
+}
+body#sectionone #masthead
+{
+	background: #666633 url(images/twicloth1.jpg) no-repeat;
+}
+
+body#sectiontwo #masthead
+{
+	background: no-repeat #666633 url(images/twicloth3a.jpg) left;
+}
+body#sectionthree #masthead
+{
+	background: no-repeat #666633 url(images/twicloth6.jpg) left;
+}
+body#sectionfour #masthead
+{
+	background: no-repeat #666633 url(images/twicloth5.jpg) left;
+}
+body#sectionfive #masthead
+{
+	background: no-repeat #666633 url(images/twicloth8.jpg) left;
+}
+
+
+#navbox
+{
+	width: 800px;
+	height: 21px;
+	background: #000;
+	padding: 0;
+	border: 0;
+	margin: 0;
+}
+
+#rightcontent
+{
+   padding : 0;
+   background : #FFC;
+   border: 0;
+   width: auto;
+   margin: 0 0 0 197px;
+}
+
+#widecontent
+{
+   background : #FFC;
+   border: 0;
+   margin: 0;
+   padding: 15px 25px;
+   width: auto;
+   text-align: justify;
+}
+
+#content
+{
+  margin: 0 ;
+  border: 0 ;
+  padding: 15px 25px;
+  width: 553px;
+}
+
+#leftnav
+{
+	float: left;
+	width: 180px;
+	margin: 8px 0 0;
+	background: #FFC;
+	padding: 8px;
+	border-right: 1px dotted #000;
+}
+
+#footer
+{
+   clear : both;
+   margin : 0;
+   padding : 5px 0;
+   color : #333;
+   background-color : #99cc99;
+   border-bottom : 1px solid #808080;
+   border-top : 1px solid #808080;
+   text-align: center;
+}
+
+/* main navbar */
+#mainnav
+{
+	margin: 0;
+	padding: 0;
+	font-family: 'Trebuchet MS', Verdana, 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Lucida, Arial, Helvetica, sans-serif;
+	background-color: #666633;
+}
+
+#mainnav ul
+{
+	border: 0;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+	clear: left;
+}
+
+#mainnav ul li
+{
+	display: block;
+	float: left;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+#mainnav ul li a
+{
+	background: #99cc99;
+	width: 159px;
+	height: 20px;
+	border-top: 1px solid #000;
+	border-left: 1px solid #000;
+	border-bottom: 1px solid #000;
+	border-right: none;
+	padding: 0;
+	margin: 0;
+	color: #333333;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	font-weight: normal;
+	line-height: 1.7em;
+	font-size:    xx-small;      
+	voice-family: "\"}\"";   
+	voice-family: inherit;   
+	font-size:    12px;
+	letter-spacing: 4px;
+}
+
+
+html>#mainnav ul li a 
+{
+	font-size: x-small;   
+}
+	
+#menu ul li#five a
+{
+	width: 157px;
+}
+	
+#mainnav ul li a:hover
+{
+	color: #000;
+	background: #ff9966;
+}
+
+#mainnav a:active
+{
+	background: #000;
+	color: #fff;
+}
+
+body#sectionone #mainnav li#one a, 
+body#sectiontwo #mainnav li#two a,
+body#sectionthree #mainnav li#three a,
+body#sectionfour #mainnav li#four a,
+body#sectionfive #mainnav li#five a
+{
+	background: #cc3300;
+	color: #cccccc;
+	font-weight: bold;
+}
+
+
+/* *** TAGS *** */
+
+h1, h2, h3, h4, h5, h6
+{
+	font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Geneva, Lucida, Arial, Helvetica, sans-serif;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+a:link
+{
+	color: #8FABBE;
+	border-bottom: 1px dotted #8fabbe;
+	background-color: transparent;
+}
+
+a:visited
+{
+	color: #8FABBE;
+	border-bottom: 1px dotted #8fabbe;
+	background-color: transparent;
+}
+
+a:hover
+{
+	color: #0088ce;
+	border-bottom: solid #0088ce 1px;
+	background-color: transparent;
+}
+
+a:active
+{
+	color: #8FABBE;
+	background-color: transparent;
+	border-bottom-width: 0;
+}
+
+#widecontent p
+{
+	text-align: justify;
+	color: #663;
+}
+
+.link-note
+{
+	font-size: x-small;
+	line-height: 150%;
+	text-align: left;
+	padding: 2px;
+	margin-bottom: 15px;
+}
+
+.noborder {
+	border: none;
+}
+
+#header h1 {
+	font-size: x-large;
+}
+
+#header p {
+	text-align: right;
+	padding-right: 20px;
+	top: 5px;
+}
+.dottedbox {
+	border-style: dotted;
+	border-width: 1px;
+	padding: .6em;
+	margin-bottom: 2em;
+}
+
+.post H3 {
+	text-align: center;
+	border-bottom: 1px solid #663;
+	border-top: 1px solid #663;
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+.post H4 {
+	color: #000;
+}
+.post ul {
+	text-align: left;
+	color: #666633;
+}
+.post p {
+	margin-top: 0.8em;
+}
+p.initial:first-letter {
+	font-size: 200%;
+	float: left;
+}
+.annotatedlink {
+	line-height: 2em;
+}
+
+img.centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background: silver;
+}
+p.jumpback {
+	text-decoration: none;
+	border-style: none;
+}
+#footer p {
+	text-align: center;
+	color: #888;
+}
+/* *** hot potatoe styles *** */
+p{	text-align: left;	margin: 0px;	font-size: 100%;}table,div,span,td{	font-size: 100%;	color: #000000;}div.Titles{	padding: 0.5em;;	text-align: center;	color: #000000;}button{	font-family: Geneva,Arial,sans-serif;	font-size: 100%;	display: inline;}.ExerciseTitle{	font-size: 140%;	color: #000000;}.ExerciseSubtitle{	font-size: 120%;	color: #000000;}div.StdDiv{	background-color: #faffe6;	text-align: center;	font-size: 100%;	color: #000000;	padding: 0.5em;	border-style: solid;	border-width: 1px 1px 1px 1px;	border-color: #000000;	margin-bottom: 1px;}/* End of Core CSS elements */.RTLText{	text-align: right;	font-size: 150%;	direction: rtl;	font-family: "Simplified Arabic", "Traditional Arabic", "Times New Roman", Geneva,Arial,sans-serif; }.CentredRTLText{	text-align: center;	font-size: 150%;	direction: rtl;	font-family: "Simplified Arabic", "Traditional Arabic", "Times New Roman", Geneva,Arial,sans-serif; }button p.RTLText{	text-align: center;}.RTLGapBox{	text-align: right;	font-size: 150%;	direction: rtl;	font-family: "Times New Roman", Geneva,Arial,sans-serif;}.Guess{	font-weight: bold;}.CorrectAnswer{	font-weight: bold;}div#Timer{	padding: 0.25em;	margin-left: auto;	margin-right: auto;	text-align: center;	color: #000000;}span#TimerText{	padding: 0.25em;	border-width: 1px;	border-style: solid;	font-weight: bold;	display: none;	color: #000000;}span.Instructions{}div.ExerciseText{}.FeedbackText, .FeedbackText span.CorrectAnswer, .FeedbackText span.Guess, .FeedbackText span.Answer{	color: #000000;}.LeftItem{	font-size: 100%;	color: #000000;	text-align: left;}.RightItem{	font-weight: bold;	font-size: 100%;	color: #000000;}span.CorrectMark{}input, textarea{	font-family: Geneva,Arial,sans-serif;	font-size: 120%;}select{	font-size: 100%;}div.Feedback {	background-color: #ffc;	left: 33%;	width: 34%;	top: 33%;	z-index: 1;	border-style: solid;	border-width: 1px;	padding: 5px;	text-align: center;	color: #000000;	position: absolute;	display: none;	font-size: 100%;}div.ExerciseDiv{	color: #000000;}/* JMatch flashcard styles */
+table.FlashcardTable{	background-color: transparent;	color: #000000;	border-color: #000000;	margin-left: 5%;	margin-right: 5%;	margin-top: 2em;	margin-bottom: 2em;	width: 90%;	position: relative;	text-align: center;	padding: 0px;}table.FlashcardTable tr{	border-style: none;	margin: 0px;	padding: 0px;	background-color: #FFFFFF;}table.FlashcardTable td.Showing{	font-size: 140%;	text-align: center;	width: 50%;	display: table-cell;	padding: 2em;	margin: 0px;	border-style: solid;	border-width: 1px;	color: #000000;	background-color: #FFFFFF;}table.FlashcardTable td.Hidden{	display: none;}/* JMix styles */
+div#SegmentDiv{	margin-top: 2em;	margin-bottom: 2em;	text-align: center;}a.ExSegment{	font-size: 120%;	font-weight: bold;	text-decoration: none;	color: #000000;}span.RemainingWordList{	font-style: italic;}div.DropLine {	position: absolute;	text-align: center;	border-bottom-style: solid;	border-bottom-width: 1px;	border-bottom-color: #000000;	width: 80%;}/* JCloze styles */.ClozeWordList{	text-align: center;	font-weight: bold;}div.ClozeBody{	text-align: left;	margin-top: 2em;	margin-bottom: 2em;	line-height: 2.0}span.GapSpan{	font-weight: bold;}/* JCross styles */table.CrosswordGrid{	margin: auto auto 1em auto;	border-collapse: collapse;	padding: 0px;	background-color: #000000;}table.CrosswordGrid tbody tr td{	width: 1.5em;	height: 1.5em;	text-align: center;	vertical-align: middle;	font-size: 140%;	padding: 1px;	margin: 0px;	border-style: solid;	border-width: 1px;	border-color: #000000;	color: #000000;}table.CrosswordGrid span{	color: #000000;}table.CrosswordGrid td.BlankCell{	background-color: #000000;	color: #000000;}table.CrosswordGrid td.LetterOnlyCell{	text-align: center;	vertical-align: middle;	background-color: #ffffff;	color: #000000;	font-weight: bold;}table.CrosswordGrid td.NumLetterCell{	text-align: left;	vertical-align: top;	background-color: #ffffff;	color: #000000;	padding: 1px;	font-weight: bold;}.NumLetterCellText{	cursor: pointer;	color: #000000;}.GridNum{	vertical-align: super;	font-size: 66%;	font-weight: bold;	text-decoration: none;	color: #000000;}.GridNum:hover, .GridNum:visited{	color: #000000;}table#Clues{	margin: auto;	vertical-align: top;}table#Clues td{	vertical-align: top;}table.ClueList{  margin: auto;}td.ClueNum{	text-align: right;	font-weight: bold;	vertical-align: top;}td.Clue{	text-align: left;}div#ClueEntry{	text-align: left;	margin-bottom: 1em;}/* Keypad styles */div.Keypad{	text-align: center;	display: none; /* initially hidden, shown if needed */}div.Keypad button{	font-family: Geneva,Arial,sans-serif;	font-size: 120%;	background-color: #ffffff;	color: #000000;	width: 2em;}/* JQuiz styles */div.QuestionNavigation{	text-align: center;}.QNum{	margin: 0em 1em 0.5em 1em;	font-weight: bold;	vertical-align: middle;}textarea{	font-family: Geneva,Arial,sans-serif;}.QuestionText{}.Answer{	font-size: 120%;	letter-spacing: 0.1em;}.PartialAnswer{	font-size: 120%;	letter-spacing: 0.1em;	color: #000000;}.Highlight{	color: #000000;	background-color: #ffff00;	font-weight: bold;	font-size: 120%;}ol.QuizQuestions{	text-align: left;	list-style-type: none;}li.QuizQuestion{	padding: 1em;	border-style: solid;	border-width: 0px 0px 1px 0px;}ol.MCAnswers{	text-align: left;	list-style-type: upper-alpha;	padding: 1em;}ol.MCAnswers li{	margin-bottom: 1em;}ol.MSelAnswers{	text-align: left;	list-style-type: lower-alpha;	padding: 1em;}div.ShortAnswer{	padding: 1em;}.FuncButton {	text-align: center;	border-style: solid;	border-left-color: #ffffff;	border-top-color: #ffffff;	border-right-color: #7f7f7f;	border-bottom-color: #7f7f7f;	color: #000000;	background-color: #FFFFFF;	border-width: 2px;	padding: 3px 6px 3px 6px;	cursor: pointer;}.FuncButtonUp {	color: #FFFFFF;	text-align: center;	border-style: solid;	border-left-color: #ffffff;	border-top-color: #ffffff;	border-right-color: #7f7f7f;	border-bottom-color: #7f7f7f;	background-color: #000000;	color: #FFFFFF;	border-width: 2px;	padding: 3px 6px 3px 6px;	cursor: pointer;}.FuncButtonDown {	color: #FFFFFF;	text-align: center;	border-style: solid;	border-left-color: #7f7f7f;	border-top-color: #7f7f7f;	border-right-color: #ffffff;	border-bottom-color: #ffffff;	background-color: #000000;	color: #FFFFFF;	border-width: 2px;	padding: 3px 6px 3px 6px;	cursor: pointer;}/*BeginNavBarStyle*/div.NavButtonBar{	background-color: #cc9;	text-align: center;	margin: 2px 0px 2px 0px;	clear: both;	font-size: 100%;}.NavButton {	border-style: solid;		border-left-color: #7f7f7f;	border-top-color: #7f7f7f;	border-right-color: #000000;	border-bottom-color: #000000;	background-color: #000000;	color: #ffffff;	border-width: 2px;	cursor: pointer;	}.NavButtonUp {	border-style: solid;	border-left-color: #7f7f7f;	border-top-color: #7f7f7f;	border-right-color: #000000;	border-bottom-color: #000000;	color: #000000;	background-color: #ffffff;	border-width: 2px;	cursor: pointer;	}.NavButtonDown {	border-style: solid;	border-left-color: #000000;	border-top-color: #000000;	border-right-color: #7f7f7f;	border-bottom-color: #7f7f7f;	color: #000000;	background-color: #ffffff;	border-width: 2px;	cursor: pointer;	}/*EndNavBarStyle*/div.CardStyle {	position: absolute;	font-family: Geneva,Arial,sans-serif;	font-size: 100%;	padding: 5px;	border-style: solid;	border-width: 1px;	color: #000000;	background-color: #FFFFFF;	left: -50px;	top: -50px;	overflow: visible;}.rtl{	text-align: right;	font-size: 140%;}
